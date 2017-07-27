@@ -57,8 +57,8 @@ class Polygon:
         # of our line 1 and in that case no intersection is possible. Careful, 
         # 0 is a special case, that's why we don't test ">=" and "<=", 
         # but "<" and ">".
-        if d1 > 0 && d2 > 0: return NO
-        if d1 < 0 && d2 < 0: return NO
+        if d1 > 0 and d2 > 0: return NO
+        if d1 < 0 and d2 < 0: return NO
 
         # The fact that vector 2 intersected the infinite line 1 above doesn't 
         # mean it also intersects the vector 1. Vector 1 is only a subset of that
@@ -76,8 +76,8 @@ class Polygon:
 
         # Again, if both have the same sign (and neither one is 0),
         # no intersection is possible.
-        if d1 > 0 && d2 > 0: return NO
-        if d1 < 0 && d2 < 0: return NO
+        if d1 > 0 and d2 > 0: return NO
+        if d1 < 0 and d2 < 0: return NO
 
         # If we get here, only two possibilities are left. Either the two
         # vectors intersect in exactly one point or they are collinear, which
