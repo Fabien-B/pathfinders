@@ -7,3 +7,4 @@ class Point:
     
     def __repr__(self):
         return "({}, {})".format(self.x, self.y)
+    
